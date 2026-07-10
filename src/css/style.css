@@ -1,0 +1,42 @@
+/*==========================*/
+/*         VARIABLES        */
+/*==========================*/
+
+:root {
+
+    --green-100: #a5f3eb;
+    --green-400: #10d5c2;
+    --orange-100: #feecec; /* Discount Background */
+    --orange-400: #ff8c66; /* Discount Text */
+    --indigo-0200: #bdccff; /* CTA Text */
+
+    --white: #ffffff; /* Pricing Component Background */
+    --slate-50: #fafbff; /* Main Background */
+    --slate-200: #eaeefb; /* Empty Slider Bar */
+    --slate-300: #cdd7ee; /* Toggle Background */
+    --slate-400: #858fad; /* Text */
+    --slate-800: #293356; /* Text & CTA Background */
+
+    --font-primary: 'Manrope', Arial, Helvetica, sans-serif;
+
+}
+
+
+
+/*==========================*/
+/*            BODY          */
+/*==========================*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    font-family: var(--font-primary);
+    font-size: 1rem;
+    font-weight: 400;
+}
