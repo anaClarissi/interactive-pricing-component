@@ -35,17 +35,49 @@
       <div class="container--card">
 
         <div class="card-body">
-          Pageviews
-          $ /month
-          Monthly Billing
-          Yearly Billing 25% discount
+
+          <h2 class="title" ><span id="page-views"></span> Pageviews</h2>
+
+          <input type="range" name="page-range" id="page-range">
+
+          <div class="view-price-content">
+
+            <span id="view-price"></span>
+
+            <span id="billing">$ /month</span>
+
+          </div>
+
+          <div class="billing-content">
+
+            <p>Monthly Billing</p>
+
+            <label class="switch">
+
+              <input type="checkbox" name="switch-billing" id="switch-billing">
+
+              <span class="slider"></span>
+
+            </label>
+
+            <p>Yearly Billing <span class="discount"> <span class="discount--symbol">-</span> 25% <span class="discount--text">discount</span></span></p>
+
+          </div>
+
         </div>
 
         <div class="card-footer">
-          Unlimited websites
-          100% data ownership
-          Email reports
-          Start my trial
+
+          <ul class="card-list">
+
+            <li class="card-list--item">Unlimited websites</li>
+            <li class="card-list--item">100% data ownership</li>
+            <li class="card-list--item">Email reports</li>
+
+          </ul>
+
+          <button type="button" class="start-btn">Start my trial</button>
+
         </div>
 
       </div>
