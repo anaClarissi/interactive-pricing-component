@@ -16,7 +16,13 @@ const switchBilling = document.querySelector("#switch-billing");
 
 
 
-pageRange.addEventListener("input", updatePlan);
+pageRange.addEventListener("input", () => {
+
+    updatePlan();
+
+    updateRangeBar();
+
+});
 
 switchBilling.addEventListener("input", updateBilling)
 
@@ -57,6 +63,20 @@ function updateBilling() {
     updatePlan();
 
 }
+
+function updateRangeBar() {
+
+    const min = pageRange.min || 0;
+
+    const max = pageRange.max || 0;
+
+    const percentage = ((pageRange.value - min) / (max - min)) * 100;
+
+    pageRange.style.setProperty("--progress", `${percentage}%`)
+
+}
+
+updateRangeBar();
 
 updatePlan();
 
