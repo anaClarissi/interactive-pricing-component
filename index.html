@@ -11,11 +11,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./src/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/src/images/favicon-32x32.png">
   
   <title>Frontend Mentor | Interactive pricing component</title>
 
-  <link rel="stylesheet" href="./src/css/style.css">
+  <link rel="stylesheet" href="/src/css/style.css">
   
 </head>
 <body>
@@ -38,13 +38,13 @@
 
           <h2 class="title" ><span id="page-views"></span> Pageviews</h2>
 
-          <input type="range" name="page-range" id="page-range">
+          <input type="range" name="page-range" id="page-range" min="0" max="4" value="2" step="1">
 
           <div class="view-price-content">
 
             <span id="view-price"></span>
 
-            <span id="billing">$ /month</span>
+            <span id="billing"> /month</span>
 
           </div>
 
@@ -86,6 +86,7 @@
 
   </main>
   
+  <script src="/src/js/script.js"></script>
 
 </body>
 </html>
