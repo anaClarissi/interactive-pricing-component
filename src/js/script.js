@@ -54,7 +54,7 @@ function updatePlan() {
 
 function updateBilling() {
 
-    let billing = switchBilling.checked ? "year" : "month";
+    const billing = switchBilling.checked ? "year" : "month";
 
     const billingText = document.querySelector("#billing");
 
