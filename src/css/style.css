@@ -5,6 +5,7 @@
 :root {
   --green-100: #a5f3eb;
   --green-400: #10d5c2;
+  --green-600: #25ADA1;
   --orange-100: #feecec; /* Discount Background */
   --orange-400: #ff8c66; /* Discount Text */
   --indigo-0200: #bdccff; /* CTA Text */
@@ -151,6 +152,10 @@ body {
   );
 }
 
+#page-range:active {
+  cursor: grabbing;
+}
+
 #page-range::-webkit-slider-thumb {
   position: relative;
   --size: 2.5rem;
@@ -163,8 +168,16 @@ body {
     center center;
   background-size: 1.25rem;
   cursor: pointer;
-  transition: transform 0.2s ease;
   box-shadow: 0 10px 25px 10px var(--green-100);
+}
+
+#page-range::-webkit-slider-thumb:hover,
+#page-range::-webkit-slider-thumb:focus {
+  opacity: 0.8;
+}
+
+#page-range::-webkit-slider-thumb:active {
+  background-color: var(--green-600);
 }
 
 #view-price {
@@ -196,6 +209,11 @@ body {
   height: 1.5rem;
 }
 
+.switch:hover .slider,
+.switch:focus .slider {
+  background-color: var(--green-400);
+}
+
 #switch-billing {
   opacity: 0;
   width: 0;
@@ -210,7 +228,6 @@ body {
   right: 0;
   bottom: 0;
   background-color: var(--slate-300);
-  transition: all 0.4s ease;
   border-radius: 10rem;
 }
 
@@ -226,6 +243,10 @@ body {
   background-color: var(--white);
   transition: all 0.4s ease;
   border-radius: 50%;
+}
+
+#switch-billing:checked + .slider {
+  background-color: var(--orange-400);
 }
 
 #switch-billing:checked + .slider::before {
@@ -299,6 +320,11 @@ body {
   cursor: pointer;
 }
 
+.start-btn:hover,
+.start-btn:focus {
+  color: var(--white);
+}
+
 /*================================*/
 /*        ==== DESKTOP ====       */
 /*================================*/
@@ -370,6 +396,10 @@ body {
     margin: 0;
   }
 
+  #page-range::-webkit-slider-thumb {
+    --size: 3rem;
+  }
+
   .billing-content {
     grid-column: 1 / span 2;
     grid-row: 3 / span 1;
@@ -397,6 +427,35 @@ body {
 
   .card-list--item {
     justify-content: flex-start;
+  }
+
+}
+
+
+/*================================*/
+/*      === ACCESSIBILITY ===     */
+/*================================*/
+
+@media (prefers-reduced-motion: no-preference) {
+
+  /*==========================*/
+  /*         CARD BODY        */
+  /*==========================*/
+
+  #page-range::-webkit-slider-thumb {
+    transition: all .2s ease-in-out;
+  }
+
+  .slider {
+    transition: transform .2s ease, background-color .2s ease-in-out;
+  }
+
+  /*==========================*/
+  /*        CARD FOOTER       */
+  /*==========================*/
+
+  .start-btn {
+    transition: color .2s ease-in-out;
   }
 
 }
