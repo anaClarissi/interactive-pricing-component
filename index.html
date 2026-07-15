@@ -11,11 +11,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/src/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./src/images/favicon-32x32.png">
   
   <title>Frontend Mentor | Interactive pricing component</title>
 
-  <link rel="stylesheet" href="/src/css/style.css">
+  <link rel="stylesheet" href="./src/css/style.css">
   
 </head>
 <body>
@@ -50,17 +50,17 @@
 
           <div class="billing-content">
 
-            <p>Monthly Billing</p>
+            <p id="monthly-billing">Monthly Billing</p>
 
             <label class="switch">
 
-              <input type="checkbox" name="switch-billing" id="switch-billing">
+              <input type="checkbox" name="switch-billing" id="switch-billing" aria-labelledby="monthly-billing yearly-billing">
 
               <span class="slider"></span>
 
             </label>
 
-            <p>Yearly Billing <span class="discount"> <span class="discount--symbol">-</span> 25% <span class="discount--text">discount</span></span></p>
+            <p id="yearly-billing">Yearly Billing <span class="discount"> <span class="discount--symbol">-</span> 25% <span class="discount--text">discount</span></span></p>
 
           </div>
 
@@ -86,7 +86,7 @@
 
   </main>
   
-  <script src="/src/js/script.js"></script>
+  <script src="./src/js/script.js"></script>
 
 </body>
 </html>

@@ -210,7 +210,7 @@ body {
 }
 
 .switch:hover .slider,
-.switch:focus .slider {
+#switch-billing:focus-visible + .slider {
   background-color: var(--green-400);
 }
 
