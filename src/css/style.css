@@ -49,7 +49,7 @@ body {
   justify-content: center;
   width: 100%;
   min-height: 100vh;
-  background-image: url("/src/images/bg-pattern.svg");
+  background-image: url("./src/images/bg-pattern.svg");
   background-size: 150vh;
   background-repeat: no-repeat;
   background-color: var(--slate-50);
@@ -80,7 +80,7 @@ body {
   gap: 1rem;
   padding: 3rem 0;
   text-align: center;
-  background: url("/src/images/pattern-circles.svg") no-repeat center center;
+  background: url("./src/images/pattern-circles.svg") no-repeat center center;
   background-size: 50%;
 }
 
@@ -164,7 +164,7 @@ body {
   width: var(--size);
   height: var(--size);
   border-radius: 50%;
-  background: var(--green-400) url("/src/images/icon-slider.svg") no-repeat
+  background: var(--green-400) url("./src/images/icon-slider.svg") no-repeat
     center center;
   background-size: 1.25rem;
   cursor: pointer;
@@ -303,7 +303,7 @@ body {
   content: "";
   width: 1.5rem;
   height: 1.5rem;
-  background: transparent url("/src/images/icon-check.svg") no-repeat center
+  background: transparent url("./src/images/icon-check.svg") no-repeat center
     center;
   background-size: 1rem;
 }
