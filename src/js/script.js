@@ -58,7 +58,7 @@ function updateBilling() {
 
     const billingText = document.querySelector("#billing");
 
-    billingText.textContent = `/${billing}`;
+    billingText.textContent = ` / ${billing}`;
 
     updatePlan();
 
